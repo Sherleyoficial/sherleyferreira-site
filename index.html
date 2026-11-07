@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sherley Ferreira</title>
-<meta name="description" content="Sherley Ferreira — Profissional de Educação Física há 30 anos, Mestre em Ciência da Nutrição (UFV). Treinamento para 40/50+, formação para Personal Trainers e consultoria para academias e estúdios.">
+<meta name="description" content="Sherley Ferreira — Profissional de Educação Física há 30 anos, Mestre em Ciência da Nutrição (UFV). Treinamento para 40/50+, formação e mentoria para Personal Trainers, consultoria para academias e estúdios e programas para empresas.">
 <meta property="og:title" content="Sherley Ferreira">
-<meta property="og:description" content="Treino com critério para 40/50+, formação para Personal e consultoria para academias.">
-<meta name="theme-color" content="#F5F1EA">
+<meta property="og:description" content="Ciência, experiência e movimento para pessoas, profissionais e organizações.">
+<meta name="theme-color" content="#F6F5F0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -24,72 +24,97 @@ fbq('init','1632653844982859');fbq('track','PageView');
 
 <style>
 :root{
-  --creme:#F5F1EA; --papel:#FFFDF9; --tinta:#1A1A1A; --cinza:#5E5A54;
-  --linha:#E4DDD0; --ouro:#B0853C; --ouro-escuro:#8E6A2E; --ouro-claro:#F1E6D2;
+  --petroleo:#10383A; --verde:#174E49; --salvia:#B6DABF; --creme:#F6F5F0; --branco:#FFFFFF;
+  --tinta:#14201F; --cinza:#55625F; --linha:#E1E4DC; --salvia-suave:#E6F1E8;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%}
-body{background:var(--creme);color:var(--tinta);font-family:Inter,system-ui,sans-serif;line-height:1.5;min-height:100vh}
-.wrap{max-width:480px;margin:0 auto;padding:40px 16px 32px}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--creme);color:var(--tinta);line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:640px;margin:0 auto;padding:0 18px 40px}
 
-/* Cabeçalho */
-.topo{text-align:center}
-.foto{width:104px;height:104px;border-radius:50%;margin:0 auto 16px;position:relative;
-  border:3px solid var(--papel);box-shadow:0 0 0 2px var(--ouro),0 10px 30px rgba(26,26,26,.12);
-  background:var(--tinta);overflow:hidden;display:grid;place-items:center}
-.foto img{width:100%;height:100%;object-fit:cover;display:block}
-.foto span{font-family:Poppins,sans-serif;font-weight:700;font-size:34px;color:var(--ouro)}
-h1{font-family:Poppins,sans-serif;font-weight:700;font-size:26px;letter-spacing:-.02em}
-.frase{font:500 17px/1.45 Poppins,sans-serif;margin:10px auto 0;max-width:380px;letter-spacing:-.01em}
-.frase b{color:var(--ouro-escuro);font-weight:700}
-.prova{display:inline-block;margin-top:14px;font-size:13px;font-weight:500;background:var(--papel);border:1px solid var(--ouro);border-radius:999px;padding:6px 14px}
-.prova b{color:var(--ouro-escuro);font-weight:700}
-.cargo{font-size:12.5px;color:var(--cinza);margin:12px auto 0;max-width:360px;line-height:1.6}
-.trajetoria{margin-top:32px;padding:24px 20px;border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
-.trajetoria h3{font:700 21px/1.25 Poppins,sans-serif;margin:6px 0 14px;letter-spacing:-.02em}
-.trajetoria p{font-size:15px;color:#33302C;margin-bottom:12px}
+/* TOPO */
+.topo{background:var(--petroleo);color:var(--creme);margin:0 -18px;padding:40px 24px 64px;text-align:center;border-radius:0 0 32px 32px}
+.foto{width:132px;height:132px;border-radius:50%;margin:0 auto 18px;border:4px solid var(--salvia);overflow:hidden;position:relative;background:var(--verde);display:grid;place-items:center}
+.foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.foto span{font:700 34px Poppins,sans-serif;color:var(--salvia)}
+h1{font:700 32px/1.15 Poppins,sans-serif;letter-spacing:-.01em}
+.frase{margin:12px auto 0;max-width:420px;font-size:17px;color:var(--salvia);font-weight:500}
+.cargo{margin-top:18px;font-size:13.5px;line-height:1.7;color:#D5E3DA}
+.cargo b{color:var(--branco);font-weight:600}
+.cargo i{font-style:normal;color:var(--salvia);padding:0 6px}
+
+.atalhos{margin:24px auto 0;max-width:520px;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.atalhos a{display:flex;align-items:center;justify-content:center;min-height:40px;padding:8px 10px;border:1px solid rgba(182,218,191,.45);border-radius:99px;color:var(--salvia);font:500 13px Poppins,sans-serif;text-decoration:none;text-align:center;transition:background .15s,color .15s}
+.atalhos a:hover,.atalhos a:focus-visible{background:var(--salvia);color:var(--petroleo);outline:none}
+
+/* ÁREAS */
+.areas{margin-top:-36px;display:grid;gap:18px}
+.area{background:var(--branco);border:1px solid var(--linha);border-radius:22px;padding:24px 22px;box-shadow:0 6px 22px rgba(16,56,58,.07);scroll-margin-top:16px}
+.num{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--salvia);color:var(--petroleo);font:700 14px Poppins,sans-serif;margin-bottom:12px}
+.area h2{font:700 20px/1.25 Poppins,sans-serif;color:var(--petroleo);text-transform:uppercase;letter-spacing:.01em}
+.sub{margin-top:6px;font-size:13px;font-weight:600;color:var(--verde);letter-spacing:.02em}
+.desc{margin-top:10px;font-size:15px;color:var(--cinza)}
+
+.itens{margin-top:18px;display:grid;gap:12px}
+.item{background:var(--creme);border:1px solid var(--linha);border-radius:16px;padding:16px}
+.item h3{font:600 16px/1.3 Poppins,sans-serif;color:var(--petroleo)}
+.item p{margin-top:6px;font-size:14.5px;color:var(--cinza)}
+.tag{display:inline-block;margin-bottom:8px;font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--verde);background:var(--salvia-suave);padding:3px 9px;border-radius:99px}
+.tag.breve{background:#fff;border:1px dashed var(--verde)}
+.item.breve{background:#fff;border-style:dashed}
+.item[hidden]{display:none}
+
+.btn{display:flex;align-items:center;justify-content:center;min-height:48px;margin-top:14px;padding:12px 18px;border-radius:14px;font:600 15px Poppins,sans-serif;text-decoration:none;text-align:center;cursor:pointer;transition:transform .15s,background .15s}
+.btn:active{transform:scale(.98)}
+.btn.cheio{background:var(--verde);color:#fff}
+.btn.cheio:hover{background:var(--petroleo)}
+.btn.salvia{background:var(--salvia);color:var(--petroleo)}
+.btn.salvia:hover{background:#a3cdb0}
+.btn.contorno{background:transparent;color:var(--verde);border:1.5px solid var(--verde)}
+.btn.contorno:hover{background:var(--salvia-suave)}
+.btn:focus-visible{outline:3px solid var(--petroleo);outline-offset:2px}
+.btn:not([href]){display:none}
+
+/* TRAJETÓRIA */
+.trajetoria{margin-top:28px;background:var(--petroleo);color:var(--creme);border-radius:22px;padding:28px 22px}
+.trajetoria .tag{background:var(--verde);color:var(--salvia)}
+.trajetoria h3{font:700 22px/1.25 Poppins,sans-serif;margin-bottom:12px}
+.trajetoria p{font-size:15px;color:#D5E3DA;margin-top:10px}
 .marcos{list-style:none;margin-top:18px;display:grid;gap:10px}
-.marcos li{font-size:14px;padding-left:22px;position:relative}
-.marcos li::before{content:"";position:absolute;left:0;top:7px;width:10px;height:10px;border-radius:50%;background:var(--ouro)}
-.selos{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:14px}
-.selo{font-size:12px;font-weight:500;background:var(--papel);border:1px solid var(--linha);border-radius:999px;padding:5px 11px}
-.selo b{color:var(--ouro-escuro);font-weight:600}
+.marcos li{position:relative;padding-left:22px;font-size:14.5px;color:var(--creme)}
+.marcos li::before{content:"";position:absolute;left:0;top:.5em;width:9px;height:9px;border-radius:50%;background:var(--salvia)}
 
-/* Portas */
-.pergunta{text-align:center;font-family:Poppins,sans-serif;font-weight:600;font-size:15px;margin:30px 0 12px}
-.abas{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:var(--papel);border:1px solid var(--linha);
-  border-radius:14px;padding:4px;position:sticky;top:10px;z-index:5;box-shadow:0 6px 20px rgba(26,26,26,.06)}
-.aba{font:600 13px/1.2 Poppins,sans-serif;color:var(--cinza);background:none;border:0;border-radius:10px;
-  padding:11px 4px;cursor:pointer;transition:.2s}
-.aba small{display:block;font:500 11px Inter,sans-serif;opacity:.8;margin-top:2px}
-.aba[aria-selected="true"]{background:var(--tinta);color:var(--creme)}
-.aba[aria-selected="true"] small{color:var(--ouro-claro)}
+.aviso{margin-top:22px;font-size:12.5px;color:var(--cinza);text-align:center;padding:0 8px}
+.rodape{margin-top:20px;display:flex;justify-content:center;gap:14px}
+.rodape a{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--verde);color:var(--salvia)}
+.rodape a:hover{background:var(--petroleo)}
+.rodape svg{width:22px;height:22px}
+.copy{margin-top:14px;text-align:center;font-size:12px;color:var(--cinza)}
 
-.painel{display:none;margin-top:16px;animation:entra .25s ease}
-.painel.ativo{display:grid;gap:12px}
-@keyframes entra{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-
-.card{background:var(--papel);border:1px solid var(--linha);border-radius:18px;padding:20px;position:relative}
-.card.destaque{border-color:var(--ouro);box-shadow:0 10px 30px rgba(176,133,60,.14)}
-.rotulo{font:600 11px Poppins,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--ouro-escuro)}
-.card h2{font:700 18px/1.25 Poppins,sans-serif;margin:6px 0 6px;letter-spacing:-.01em}
-.card p{font-size:14px;color:var(--cinza)}
-.btn{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;width:100%;
-  font:600 15px Poppins,sans-serif;text-decoration:none;border-radius:12px;padding:14px 16px;transition:.15s}
-.btn.cheio{background:var(--tinta);color:var(--creme)}
-.btn.cheio:hover{background:#000}
-.btn.ouro{background:var(--ouro);color:#fff}
-.btn.ouro:hover{background:var(--ouro-escuro)}
-.btn.contorno{border:1.5px solid var(--tinta);color:var(--tinta)}
-.btn.desligado{background:var(--ouro-claro);color:var(--ouro-escuro);pointer-events:none}
-.btn svg{width:18px;height:18px;flex:none}
-
-.aviso{font-size:12px;color:var(--cinza);text-align:center;margin-top:28px;line-height:1.5}
-.rodape{display:flex;justify-content:center;gap:10px;margin-top:20px}
-.rodape a{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--papel);
-  border:1px solid var(--linha);color:var(--tinta)}
-.rodape svg{width:20px;height:20px}
-.copy{text-align:center;font-size:12px;color:var(--cinza);margin-top:14px}
+@media(min-width:760px){
+  .wrap{max-width:800px;padding:0 24px 56px}
+  .topo{margin:0 -24px;padding:60px 56px 84px;border-radius:0 0 40px 40px}
+  .foto{width:150px;height:150px}
+  h1{font-size:44px}
+  .frase{max-width:560px;font-size:19px}
+  .cargo{font-size:15px}
+  .atalhos{max-width:none;grid-template-columns:repeat(4,auto);justify-content:center;gap:10px;margin-top:30px}
+  .atalhos a{padding:8px 20px;font-size:13.5px}
+  .areas{gap:24px;margin-top:-44px}
+  .area{padding:36px 40px}
+  .area h2{font-size:24px}
+  .sub{font-size:14px}
+  .desc{font-size:16px;max-width:640px}
+  .item{padding:20px 22px}
+  .item h3{font-size:17px}
+  .item p{font-size:15px}
+  .btn{display:inline-flex;min-width:300px;margin-top:16px}
+  .area>.btn{margin-top:20px}
+  .trajetoria{padding:36px 40px}
+  .trajetoria h3{font-size:26px}
+  .trajetoria p,.marcos li{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
 </head>
 <body>
@@ -98,76 +123,107 @@ h1{font-family:Poppins,sans-serif;font-weight:700;font-size:26px;letter-spacing:
   <header class="topo">
     <div class="foto"><img src="foto.jpg" alt="Sherley Ferreira" onerror="this.remove()"><span>SF</span></div>
     <h1>Sherley Ferreira</h1>
-    <p class="frase">Há <b>30 anos</b> uno ciência e prática para ajudar pessoas, Personal Trainers e academias a evoluírem com método.</p>
-    <p class="prova">Alunos que treinam comigo há <b>mais de 20 anos</b></p>
-    <p class="cargo">Profissional de Educação Física · Mestre em Ciência da Nutrição (UFV) · Professor de pós-graduação · Ubá/MG</p>
+    <p class="frase">Ciência, experiência e movimento para pessoas, profissionais e organizações.</p>
+    <p class="cargo">Profissional de Educação Física<i>|</i>Mestre em Ciência da Nutrição (UFV)<i>|</i>Professor de pós-graduação<i>|</i><b>30 anos de experiência</b></p>
+    <nav class="atalhos" aria-label="Ir para uma área">
+      <a href="#voce">Treinamento</a>
+      <a href="#personal">Personal Trainers</a>
+      <a href="#academia">Academias/Studios</a>
+      <a href="#empresas">Empresas</a>
+    </nav>
   </header>
 
-  <p class="pergunta">Como posso ajudar você?</p>
+  <div class="areas">
 
-  <nav class="abas" role="tablist">
-    <button class="aba" role="tab" data-porta="voce" aria-selected="true">Para você<small>Treinar</small></button>
-    <button class="aba" role="tab" data-porta="personal" aria-selected="false">Personal<small>Mentoria</small></button>
-    <button class="aba" role="tab" data-porta="academia" aria-selected="false">Academias/<wbr>Studios<small>Consultoria</small></button>
-  </nav>
+    <!-- ÁREA 1: QUERO TREINAR COM SHERLEY -->
+    <section class="area" id="voce" aria-labelledby="t1">
+      <span class="num">1</span>
+      <h2 id="t1">Quero treinar com Sherley</h2>
+      <p class="sub">Exercício físico | Longevidade | Performance</p>
+      <p class="desc">Treinamento com avaliação, critério e acompanhamento, para emagrecimento, força, ganho de massa muscular, condicionamento físico e qualidade de vida.</p>
+      <div class="itens">
+        <div class="item">
+          <span class="tag">Presencial · Ubá/MG</span>
+          <h3>Studio Fit Personal</h3>
+          <p>Treinamento para 40/50+ com avaliação e acompanhamento próximo. Até 4 alunos por horário.</p>
+          <a class="btn cheio" data-link="studio" data-evento="Studio">Agendar uma avaliação</a>
+        </div>
+        <div class="item">
+          <span class="tag">Online · Onde você estiver</span>
+          <h3>Treino online pelo aplicativo</h3>
+          <p>Treino individual montado a partir da sua avaliação, no aplicativo, para treinar em casa ou na academia.</p>
+          <a class="btn contorno" data-link="online" data-evento="Treino Online">Quero treinar online</a>
+        </div>
+        <div class="item">
+          <span class="tag">Programa Premium | 45 dias</span>
+          <h3>Sistema Sherley GLP-1™</h3>
+          <p>Programa individualizado para pessoas em emagrecimento com GLP-1. Avaliação física, treino no aplicativo, monitoramento da força, revisões e relatório de evolução ao final dos 45 dias.</p>
+          <a class="btn contorno" data-link="glp1consumidor" data-evento="GLP1 Consumidor">Conhecer o programa</a>
+        </div>
+        <!-- REATIVAR QUANDO A PÁGINA DE VENDAS ESTIVER PRONTA:
+             1) remover o atributo "hidden" do bloco abaixo
+             2) trocar o <p> por descrição oficial e adicionar o botão:
+                <a class="btn cheio" data-link="caneta" data-evento="Caneta Nao Faz">Conhecer</a>
+             3) incluir em LINKS no script: caneta: {url:"URL DA PÁGINA DE VENDAS"} -->
+        <div class="item breve" id="caneta" hidden>
+          <span class="tag breve">Em desenvolvimento</span>
+          <h3>O Que a Caneta Não Faz</h3>
+          <p>Novo produto digital, ainda em desenvolvimento.</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- PORTA 1: CONSUMIDOR FINAL -->
-  <section class="painel ativo" id="voce" role="tabpanel">
-    <article class="card destaque">
-      <span class="rotulo">Presencial · Ubá/MG</span>
-      <h2>Treinamento para 40/50+ no Studio Fit Personal</h2>
-      <p>Treino personalizado com avaliação, critério e acompanhamento próximo. Até 4 alunos por horário.</p>
-      <a class="btn cheio" data-link="studio" data-evento="Studio">Agendar uma avaliação</a>
-    </article>
-    <article class="card">
-      <span class="rotulo">Online · Onde você estiver</span>
-      <h2>Treino online pelo aplicativo</h2>
-      <p>Treino individual montado a partir da sua avaliação, no aplicativo, para treinar em casa ou na academia.</p>
-      <a class="btn contorno" data-link="online" data-evento="Treino Online">Quero treinar online</a>
-    </article>
-    <article class="card">
-      <span class="rotulo">Para quem usa GLP-1</span>
-      <h2>Treino orientado durante o tratamento com GLP-1</h2>
-      <p>Acompanhamento do treino com foco em força e função, em paralelo ao acompanhamento médico e nutricional.</p>
-      <a class="btn contorno" data-link="glp1consumidor" data-evento="GLP1 Consumidor">Quero entender como funciona</a>
-    </article>
-  </section>
+    <!-- ÁREA 2: SOU PERSONAL TRAINER -->
+    <section class="area" id="personal" aria-labelledby="t2">
+      <span class="num">2</span>
+      <h2 id="t2">Sou Personal Trainer</h2>
+      <p class="sub">Mentoria | Formação | Desenvolvimento profissional</p>
+      <p class="desc">Mentorias e desenvolvimento profissional para Profissionais de Educação Física.</p>
+      <div class="itens">
+        <div class="item">
+          <span class="tag">Formação digital</span>
+          <h3>GLP-1 na Prática do Personal</h3>
+          <p>O que observar, avaliar e ajustar no treinamento de clientes que usam GLP-1, dentro da atuação do Personal.</p>
+          <a class="btn cheio" data-link="curso" data-evento="Curso Personal">Conhecer a formação</a>
+        </div>
+        <div class="item">
+          <span class="tag">Material gratuito</span>
+          <h3>GLP-1 e Exercício Físico</h3>
+          <p>As 5 perguntas que todo Personal precisa fazer quando o aluno usa GLP-1. PDF gratuito, enviado na hora.</p>
+          <a class="btn contorno" data-link="isca" data-evento="Isca Personal">Receber o PDF grátis</a>
+        </div>
+        <div class="item">
+          <span class="tag">Mentoria</span>
+          <h3>Mentoria para Personal Trainer</h3>
+          <p>Posicionamento, autoridade e organização do negócio, com acompanhamento direto.</p>
+          <a class="btn contorno" data-link="mentoria" data-evento="Mentoria Personal">Falar sobre a mentoria</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- PORTA 2: PERSONAL -->
-  <section class="painel" id="personal" role="tabpanel">
-    <article class="card destaque">
-      <span class="rotulo">Formação digital</span>
-      <h2>GLP-1 na Prática do Personal</h2>
-      <p>O que observar, avaliar e ajustar no treinamento de clientes que usam GLP-1, dentro da atuação do Personal.</p>
-      <a class="btn ouro" data-link="curso" data-evento="Curso Personal">Conhecer a formação</a>
-    </article>
-    <article class="card">
-      <span class="rotulo">Material gratuito</span>
-      <h2>GLP-1 e Exercício Físico</h2>
-      <p>As 5 perguntas que todo Personal precisa fazer quando o aluno usa GLP-1. PDF gratuito, enviado na hora.</p>
-      <a class="btn contorno" data-link="isca" data-evento="Isca Personal">Receber o PDF grátis</a>
-    </article>
-    <article class="card">
-      <span class="rotulo">Mentoria</span>
-      <h2>Mentoria para Personal Trainer</h2>
-      <p>Posicionamento, autoridade e organização do negócio, com acompanhamento direto.</p>
-      <a class="btn contorno" data-link="mentoria" data-evento="Mentoria Personal">Falar sobre a mentoria</a>
-    </article>
-  </section>
-
-  <!-- PORTA 3: ACADEMIA / ESTÚDIO -->
-  <section class="painel" id="academia" role="tabpanel">
-    <article class="card destaque">
-      <span class="rotulo">Consultoria</span>
-      <h2>Consultoria para academias e studios</h2>
-      <p>Diagnóstico da operação, retenção e decisões de gestão para quem já tem espaço funcionando.</p>
+    <!-- ÁREA 3: ACADEMIA / STUDIO -->
+    <section class="area" id="academia" aria-labelledby="t3">
+      <span class="num">3</span>
+      <h2 id="t3">Tenho uma Academia ou Studio</h2>
+      <p class="sub">Consultoria | Gestão | Negócios fitness</p>
+      <p class="desc">Consultoria, organização de serviços, gestão e desenvolvimento de negócios fitness. Diagnóstico da operação, retenção e decisões de gestão para quem já tem espaço funcionando.</p>
       <a class="btn cheio" data-link="consultoria" data-evento="Consultoria">Agendar uma conversa</a>
-    </article>
-  </section>
+    </section>
+
+    <!-- ÁREA 4: EMPRESAS -->
+    <section class="area" id="empresas" aria-labelledby="t4">
+      <span class="num">4</span>
+      <h2 id="t4">Para Empresas<br>Longevidade &amp; Capacidade Humana</h2>
+      <p class="sub">Palestras | Programas | Projetos</p>
+      <p class="desc">Palestras e projetos sobre saúde, capacidade física e longevidade para organizações que desejam preparar suas pessoas para uma vida profissional mais longa e ativa.</p>
+      <a class="btn salvia" data-link="empresas" data-evento="Empresas">Solicitar informações</a>
+    </section>
+
+  </div>
 
   <!-- TRAJETÓRIA -->
   <section class="trajetoria">
-    <span class="rotulo">Trajetória</span>
+    <span class="tag">Trajetória</span>
     <h3>30 anos acompanhando pessoas</h3>
     <p>Comecei em 1996, no treinamento personalizado, e nunca saí dele. Nesse tempo, vi o treinamento mudar, a ciência avançar e a tecnologia entrar na profissão.</p>
     <p>Mas o que mais me ensinou foi acompanhar as mesmas pessoas por muito tempo. Tenho alunos que treinam comigo há mais de 20 anos. Vi objetivos mudarem, rotinas mudarem e alunos chegarem aos 50, 60 anos ainda querendo evoluir.</p>
@@ -206,6 +262,7 @@ const LINKS = {
   isca:           {url:"https://forms.gle/iTzxgWGR3whD8M946"}, // formulário que entrega o PDF "As 5 perguntas"
   mentoria:       {whats:"Olá, Sherley! Sou Personal e quero saber sobre a mentoria."},
   consultoria:    {whats:"Olá, Sherley! Tenho academia/estúdio e quero saber sobre a consultoria."},
+  empresas:       {whats:"Olá, Sherley! Vim pelo Instagram e quero informações sobre palestras, programas e projetos de longevidade e capacidade humana no trabalho para a minha empresa."},
   whats:          {whats:"Olá, Sherley! Vim pelo Instagram."}
 };
 /* ====================================================== */
@@ -218,14 +275,11 @@ document.querySelectorAll("[data-link]").forEach(a=>{
   a.addEventListener("click",()=>{ try{ fbq('trackCustom','CliqueHub',{destino:a.dataset.evento}); }catch(e){} });
 });
 
-const abas = document.querySelectorAll(".aba");
-function abrir(id){
-  abas.forEach(b=>b.setAttribute("aria-selected", b.dataset.porta===id));
-  document.querySelectorAll(".painel").forEach(p=>p.classList.toggle("ativo", p.id===id));
+/* Compatibilidade com links antigos (#voce, #personal, #academia) e novo (#empresas) */
+const alvo = location.hash.replace("#","");
+if(["voce","personal","academia","empresas"].includes(alvo)){
+  const el = document.getElementById(alvo); if(el) el.scrollIntoView();
 }
-abas.forEach(b=>b.addEventListener("click",()=>{ abrir(b.dataset.porta); history.replaceState(null,"","#"+b.dataset.porta); }));
-const inicial = location.hash.replace("#","");
-if(["voce","personal","academia"].includes(inicial)) abrir(inicial);
 </script>
 </body>
 </html>
